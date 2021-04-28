@@ -10,10 +10,11 @@
     right: 0;
     left: 0;
     height: 100vh;
+    display: none;
 }
 
 .has-mobile-nav .c-mobile-nav {
-
+    display: block;
 }
 
 .c-mobile-nav__header {
