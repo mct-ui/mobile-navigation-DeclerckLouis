@@ -450,15 +450,39 @@ a:focus {
   right: 0;
   left: 0;
   height: 100vh;
-  opacity: 0;
   pointer-events: none;
-  transition: opacity 0.25s;
+}
+
+.c-mobile-nav__body {
+  position: relative;
+  padding: 24px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  transition: transform 0.25s ease;
+}
+
+.c-mobile-nav .c-mobile-nav__body {
+  transform: translateX(-100%);
 }
 
 .has-mobile-nav .c-mobile-nav {
-  opacity: 1;
   pointer-events: auto;
 }
+
+.has-mobile-nav .c-mobile-nav__body {
+  transform: translateX(0);
+}
+
+/* .c-mobile-nav__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #202024;
+  transition: opacity 0.25s ease;
+} */
 
 .c-logo {
   height: 32px;
